@@ -7,18 +7,16 @@
 # Definiendo ingredientes en listas
 receta1 = ['Lentejas', 'Apio']
 receta2 = ['Morrón', 'Cebolla']
-comunes = ['Verduras', 'Cebolla']
+comunes = ['Verduras', 'Berenjena']
 
-# Mostrando por pantalla las listas. El formato de salida sale como string con el metodo join
-print("1.-",", ".join(receta1))
-print("2.-",", ".join(receta2))
-rel = int(input("Selecciona tu receta: "))
+receta = int(input("Seleccioná tu receta: "))
 
-ex = int(input("Selecciona un ingrediente común: "))
-
-if rel > 2 or ex > 2:
-    print("Ingreso de datos incorrecto: ")
+if receta == 1:
+    print("Los ingredientes de la receta son:", " y ".join(receta1))
+elif receta == 2:
+    print("Los ingredientes de la receta son:", " y ".join(receta2))
 else:
-    print("Su receta elegida es: ",
+    print("ERROR: Opción incorrecta")
 
-#print("1.-", comunes[0],"\n2.-", comunes[1]
+# Ahora preguntamos por el ingrediente común.
+ing_comun = int(input("Seleccioná el ingrediente común\n1.- Verduras\n2.- Berenjena\n"))
