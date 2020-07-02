@@ -4,19 +4,28 @@
  Ingredientes Receta 2: Morrón y Cebolla.
 """
 
-# Definiendo ingredientes en listas
-receta1 = ['Lentejas', 'Apio']
-receta2 = ['Morrón', 'Cebolla']
-comunes = ['Verduras', 'Berenjena']
-
-receta = int(input("Seleccioná tu receta: "))
-
+receta = int(input("Selecciona la receta que querés:\n\t1.- Receta 1\n\t2.- Receta 2\nINGRESO: "))
 if receta == 1:
-    print("Los ingredientes de la receta son:", " y ".join(receta1))
+	print("Los ingredientes de esta receta son:\n\t1.- LENTEJAS\n\t2.- APIO")
+	ingrediente = int(input("Selecciona un ingrediente: "))
+	if ingrediente != 1 and ingrediente != 2:
+		print("ERROR")
+	else:
+		print("La receta elegida es la RECETA 1. Los ingredientes son: Verduras, Berenjena y ", end="")
+		if ingrediente == 1:
+			print("Lentejas")
+		else:
+			print("Apio")
 elif receta == 2:
-    print("Los ingredientes de la receta son:", " y ".join(receta2))
+	print("Los ingredientes de esta receta son:\n\t1.- MORRÓN\n\t2.- CEBOLLA")
+	ingrediente = int(input("Selecciona un ingrediente: "))
+	if ingrediente != 1 and ingrediente != 2:
+		print("ERROR")
+	else:
+		print("La receta elegida es la RECETA 1. Los ingredientes son: Verduras, Berenjena y ", end="")
+		if ingrediente == 1:
+			print("Morrón")
+		else:
+			print("Cebolla")
 else:
-    print("ERROR: Opción incorrecta")
-
-# Ahora preguntamos por el ingrediente común.
-ing_comun = int(input("Seleccioná el ingrediente común\n1.- Verduras\n2.- Berenjena\n"))
+	print("ERROR")
