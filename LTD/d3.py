@@ -8,6 +8,7 @@ while True:
 
     while True:
         nombre = input("Ingresa el nombre: ")
+        nombre = nombre.capitalize()
         email = input("Ingresa el correo: ")
         if nombre in diccionario:
             print("Repetido")
