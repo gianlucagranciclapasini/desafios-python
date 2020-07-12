@@ -11,6 +11,10 @@ de años que tarda en degradarse.
 """
 
 def tiempo_degradacion(elemento):
+	"""
+	Esta funcion recibe un string como parámetro y devuelve la cantidad de años que tarda en degradarse un material
+	"""
+
 	if elemento == "Botella":
 		return "150 años"
 	elif elemento == "Botella PET":
